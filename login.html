@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<div class="container" id="StranicaLogin">
+    <div class="row justify-content-center my-5">
+        <h1 id="logo">KOD KRALJA</h1>
+    </div>
+    <div class="row justify-content-center" id="LoginTekst">
+        <div class="col-lg-6 col-xs-12">
+            <form action={{ url_for("login") }} method="POST" class="">
+                <div class="form-group">
+                    <label for="">Email adresa</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Lozinka</label>
+                    <input type="password" id="inputPassword" class="form-control" required>
+                </div>
+                <input type="submit" class="btn btn-light" role="button" value="Prijavi se">
+                <div>
+                <a href="{{ url_for('novi_korisnik') }}">Nemate nalog, napravite ga ovde</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

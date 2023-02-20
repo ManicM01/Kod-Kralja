@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <a id="logo"class="navbar-brand " href="{{ url_for('home') }}">Kod Kralja</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ url_for('pice') }}">Pice<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('burgeri') }}">Burgeri</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('korisnici') }}">Korisnici</a>
+          </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a href="{{ url_for('login') }}" class="btn btn-light">
+            <i class="fa-regular fa-user"></i></a>
+      </form>
+      <form action={{ url_for("logout") }} class="form-inline my-2 my-lg-0">
+        <a href="{{ url_for('login') }}" class="btn btn-light">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
+      </form>
+    </div>
+</nav>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+<div id="StranicaHome" class="justify-content-center container col-lg-6">
+    <div  id="logo">
+    <h1>KOD KRALJA</h1>
+    </div>
+    <div id="hometekst">
+       <h3> Prepoznatljivi ukus odlične hrane najkvalitetnijih sastojaka, biranih sa mnogo ljubavi i zadovoljstva.
+        Restoran u kome su uživale i najpoznatije zvezde svetskih razmera, po najboljim cenama u gradu.
+        Nastali smo kao produkt velikih ljubitelja brze i ukusne hrana a naročito burgera. 
+        U ponudi imamo najbolje burgere koje svi preporučuju, a ako nam ne verujete dojite da se uverite i sami jer nećete zažaliti.</h3>
+    </div>
+</div>
+
+
+{% endblock %}

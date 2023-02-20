@@ -1,0 +1,282 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a id="logo"class="navbar-brand " href="{{ url_for('home') }}">Kod Kralja</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ url_for('pice') }}">Pice<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('burgeri') }}">Burgeri</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('korisnici') }}">Korisnici</a>
+        </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a href="{{ url_for('login') }}" class="btn btn-light">
+          <i class="fa-regular fa-user"></i></a>
+    </form>
+    <form action={{ url_for("logout") }} class="form-inline my-2 my-lg-0">
+      <a href="{{ url_for('login') }}" class="btn btn-light">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
+    </form>
+  </div>
+</nav>
+
+<div id="StranicaBurgeri">
+<div class="container col-lg-6 col-xs-12">
+    <div class="my-5">
+<h3 id="logo">Pravljenje burgera je naša briga, Vaše je samo da u njima uživate!</h3>
+    </div>
+</div>
+<div class="container col-lg-4 col-xs-12">
+    <div class="my-5">
+        <hr color="purple">
+        <div id="slike">
+<img src="/static/slike/Burgeri/Grill-Chicken-Bacon.png" height="300px" width="300px">
+        </div>
+    <p id="BurgeriTekst"><b>Chicken Bacon</b></p>
+<table class="table" id="BurgeriTekst">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">NA 100G</th>
+        <th scope="col">PO JEDNOM PROIZVODU</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Energetska vrednost</th>
+        <td>797.54kJ</td>
+        <td>1684.84kJ</td>
+      </tr>
+      <tr>
+        <th scope="row">Masti</th>
+        <td>8,65g</td>
+        <td>18.28g</td>
+      </tr>
+      <tr>
+        <th scope="row">od toga zasićene masne kiseline</th>
+        <td>2.27g</td>
+        <td>4,80g</td>
+      </tr>
+      <tr>
+        <th scope="row">Ugljeni hidrati</th>
+        <td>15.66g</td>
+        <td>33.09g</td>
+      </tr>
+      <tr>
+        <th scope="row">od toga šećeri</th>
+        <td>4.15g</td>
+        <td>8.76g</td>
+      </tr>
+      <tr>
+        <th scope="row">Vlakna</th>
+        <td>0.35g</td>
+        <td>0.73g</td>
+      </tr>
+      <tr>
+        <th scope="row">Proteini</th>
+        <td>12.37g</td>
+        <td>26.14g</td>
+      </tr>
+      <tr>
+        <th scope="row">So</th>
+        <td>1.29g</td>
+        <td>2,73g</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <hr color="purple">
+</div>
+<div class="container col-lg-4 col-xs-12">
+    <div>
+        <div id="slike">
+<img src="/static/slike/Burgeri/Big-Tasty-Bacon.jpg" height="300px" width="300px">
+    </div>
+    <p id="BurgeriTekst"><b>Big Tasty Bacon</b></p>
+<table class="table" id="BurgeriTekst">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">NA 100G</th>
+        <th scope="col">PO JEDNOM PROIZVODU</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Energetska vrednost</th>
+        <td>1048.43kJ</td>
+        <td>3700.96kJ</td>
+      </tr>
+      <tr>
+        <th scope="row">Masti</th>
+        <td>15.38g</td>
+        <td>54.30g</td>
+      </tr>
+      <tr>
+        <th scope="row">od toga zasićene masne kiseline</th>
+        <td>6.24g</td>
+        <td>22.04g</td>
+      </tr>
+      <tr>
+        <th scope="row">Ugljeni hidrati</th>
+        <td>14.08g</td>
+        <td>49.71g</td>
+      </tr>
+      <tr>
+        <th scope="row">od toga šećeri</th>
+        <td>2.99g</td>
+        <td>10.56g</td>
+      </tr>
+      <tr>
+        <th scope="row">Vlakna</th>
+        <td>0.94g</td>
+        <td>3.32g</td>
+      </tr>
+      <tr>
+        <th scope="row">Proteini</th>
+        <td>13.47g</td>
+        <td>47.56g</td>
+      </tr>
+      <tr>
+        <th scope="row">So</th>
+        <td>1.13g</td>
+        <td>4.00g</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <hr color="purple">
+</div>
+<div class="container col-lg-4 col-xs-12">
+    <div>
+        <div id="slike">
+<img src="/static/slike/Burgeri/Crispy-Cheese.jpg" height="300px" width="300px" class="slikeburgeri">
+        </div>
+    <p id="BurgeriTekst"><b>Crispy Cheese</b></p>
+<table class="table" id="BurgeriTekst">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">NA 100G</th>
+        <th scope="col">PO JEDNOM PROIZVODU</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Energetska vrednost</th>
+        <td>797.54kJ</td>
+        <td>1684.84kJ</td>
+      </tr>
+      <tr>
+        <th scope="row">Masti</th>
+        <td>8,65g</td>
+        <td>18.28g</td>
+      </tr>
+      <tr>
+        <th scope="row">od toga zasićene masne kiseline</th>
+        <td>2.27g</td>
+        <td>4,80g</td>
+      </tr>
+      <tr>
+        <th scope="row">Ugljeni hidrati</th>
+        <td>15.66g</td>
+        <td>33.09g</td>
+      </tr>
+      <tr>
+        <th scope="row">od toga šećeri</th>
+        <td>4.15g</td>
+        <td>8.76g</td>
+      </tr>
+      <tr>
+        <th scope="row">Vlakna</th>
+        <td>0.35g</td>
+        <td>0.73g</td>
+      </tr>
+      <tr>
+        <th scope="row">Proteini</th>
+        <td>12.37g</td>
+        <td>26.14g</td>
+      </tr>
+      <tr>
+        <th scope="row">So</th>
+        <td>1.29g</td>
+        <td>2,73g</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+<div class="container col-lg-4 col-xs-12">
+    <hr color="purple">
+    <div>
+        <div id="slike">
+<img src="/static/slike/Burgeri/Grand-DC-Jalapeno.png" height="300px" width="300px">
+        </div>
+    <p id="BurgeriTekst"><b>Grand DC Jalapeno</b></p>
+<table class="table" id="BurgeriTekst">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">NA 100G</th>
+        <th scope="col">PO JEDNOM PROIZVODU</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Energetska vrednost</th>
+        <td>797.54kJ</td>
+        <td>1684.84kJ</td>
+      </tr>
+      <tr>
+        <th scope="row">Masti</th>
+        <td>8,65g</td>
+        <td>18.28g</td>
+      </tr>
+      <tr>
+        <th scope="row">od toga zasićene masne kiseline</th>
+        <td>2.27g</td>
+        <td>4,80g</td>
+      </tr>
+      <tr>
+        <th scope="row">Ugljeni hidrati</th>
+        <td>15.66g</td>
+        <td>33.09g</td>
+      </tr>
+      <tr>
+        <th scope="row">od toga šećeri</th>
+        <td>4.15g</td>
+        <td>8.76g</td>
+      </tr>
+      <tr>
+        <th scope="row">Vlakna</th>
+        <td>0.35g</td>
+        <td>0.73g</td>
+      </tr>
+      <tr>
+        <th scope="row">Proteini</th>
+        <td>12.37g</td>
+        <td>26.14g</td>
+      </tr>
+      <tr>
+        <th scope="row">So</th>
+        <td>1.29g</td>
+        <td>2,73g</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr color="purple">
+  </div>
+</div>
+</div>
+ 
+{% endblock %}

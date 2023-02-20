@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a id="logo"class="navbar-brand " href="{{ url_for('home') }}">Kod Kralja</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ url_for('pice') }}">Pice<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('burgeri') }}">Burgeri</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('korisnici') }}">Korisnici</a>
+        </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a href="{{ url_for('login') }}" class="btn btn-light">
+          <i class="fa-regular fa-user"></i></a>
+    </form>
+    <form action={{ url_for("logout") }} class="form-inline my-2 my-lg-0">
+      <a href="{{ url_for('login') }}" class="btn btn-light">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
+    </form>
+  </div>
+</nav>
+
+<div id="StranicaPice">
+<div class="container col-lg-6 col-xs-12" >
+    <div class="my-5">
+<h3 id="logo">Niste u Italiji, to smo samo mi!</h3>
+    </div>
+</div>
+<div id="PiceTekst">
+<div class="container col-lg-4 col-xs-12">
+    <div class="my-5">
+        <hr color="purple">
+        <div id="slike">
+<img src="/static/slike/Pice/frutti_di_mare.jpg" height="300px" width="300px" >
+        </div>
+    <p id="pice"><b>Fruti di Mare</b></p>
+<table class="table" id="PiceTekst">
+    <thead>
+      <tr>
+        <th scope="col">Sadržaj</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>pelet</td>
+      </tr>
+      <tr>
+        <td>kačkavalj</td>
+      </tr>
+      <tr>
+        <td>plodovi mora</td>
+      </tr>
+      <tr>
+        <td>beli luk</td>
+      </tr>
+      <tr>
+        <td>masline</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <hr color="purple">
+</div>
+<div class="container col-lg-4 col-xs-12">
+    <div>
+        <div id="slike">
+<img src="/static/slike/Pice/al_tonno.jpg" height="300px" width="300px">
+    </div>
+    <p id="pice"><b>Al Tonno</b></p>
+    <table class="table" id="PiceTekst">
+        <thead>
+          <tr>
+            <th scope="col">Sadržaj</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pelet</td>
+          </tr>
+          <tr>
+            <td>pečurke</td>
+          </tr>
+          <tr>
+            <td>tunjevina</td>
+          </tr>
+          <tr>
+            <td>zelena paprika</td>
+          </tr>
+          <tr>
+            <td>masline</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <hr color="purple">
+</div>
+<div class="container col-lg-4 col-xs-12">
+    <div>
+        <div id="slike">
+<img src="/static/slike/Pice/vegeteriana.jpg" height="300px" width="300px">
+        </div>
+    <p id="pice"><b>Vegeteriana</b></p>
+    <table class="table" id="PiceTekst">
+        <thead>
+          <tr>
+            <th scope="col">Sadržaj</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pelet</td>
+          </tr>
+          <tr>
+            <td>kačkavalj</td>
+          </tr>
+          <tr>
+            <td>tikvica</td>
+          </tr>
+          <tr>
+            <td>kukuruz</td>
+          </tr>
+          <tr>
+            <td>pečurke</td>
+          </tr>
+          <tr>
+            <td>zelena paprika</td>
+          </tr>
+          <tr>
+            <td>masline</td>
+          </tr>
+          <tr>
+            <td>crni luk</td>
+          </tr>
+          <tr>
+            <td>beli luk</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
+<div class="container col-lg-4 col-xs-12">
+    <hr color="purple">
+    <div>
+        <div id="slike">
+<img src="/static/slike/Pice/quatro_staggione.jpg" height="300px" width="300px" >
+        </div>
+    <p id="pice"><b>Quatro Stagione</b></p>
+    <table class="table" id="PiceTekst">
+        <thead>
+          <tr>
+            <th scope="col">Sadržaj</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pelet</td>
+          </tr>
+          <tr>
+            <td>kačkavalj</td>
+          </tr>
+          <tr>
+            <td>šunka</td>
+          </tr>
+          <tr>
+            <td>kulen</td>
+          </tr>
+          <tr>
+            <td>slanina</td>
+          </tr>
+          <tr>
+            <td>pečurke</td>
+          </tr>
+          <tr>
+            <td>jaje</td>
+          </tr>
+          <tr>
+            <td>svež paradajz</td>
+          </tr>
+        </tbody>
+      </table>
+  <hr color="purple">
+  </div>
+</div>
+</div>
+</div>
+
+{% endblock %}
