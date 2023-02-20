@@ -1,0 +1,143 @@
+#StranicaHome{
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    width: 600px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+#hometekst{
+    position: absolute;
+    top: 20%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#StranicaPice{
+    position: relative;
+    left: 25%;
+    width: 1000px;
+    height: 3250px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);  
+}
+
+#PiceTekst{
+    text-align: center;  
+    color: white;
+}
+
+#StranicaBurgeri{
+    position: relative;
+    left: 25%;
+    width: 1000px;
+    height: 4200px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);   
+}
+
+#BurgeriTekst{
+    text-align: center;  
+    color: white;
+}
+
+#StranicaKorisnici{
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    width: 1000px;
+    height: auto;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5); 
+}
+
+#KorisniciTekst{
+    text-align: center;  
+    color: white; 
+}
+
+#StranicaNoviKorisnik{
+    position: absolute;
+    top: 10%;
+    left: 42%;
+    width: 400px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);   
+}
+  
+#NoviKorisnikTekst{
+    text-align: left;  
+    color: white;  
+}
+
+#StranicaKorisnikIzmena{
+    position: absolute;
+    top: 10%;
+    left: 42%;
+    width: 400px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5); 
+}
+
+#KorisnikIzmenaTekst{
+    text-align: left;  
+    color: white;   
+}
+
+#StranicaLogin{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 1000px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+#LoginTekst{
+    text-align: left;  
+    color: white; 
+}
+
+body{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(/static/slike/pozadina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#slike{
+    text-align: center;
+}
+
+#logo{
+    color: purple;
+    text-align: center;
+}
